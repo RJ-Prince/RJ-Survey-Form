@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RJ Gaming</title>
+        <link rel="stylesheet" href="index2.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title">Welcome To RJ Gaming Life</h1>
+                <p id="description">Sign In to Contine to be a member in RJ Gaming Life.</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="name" name="name" id="name" class="form-control" placeholder="Enter You Name Here" required>
+                </div>
+                <div class="form-group">
+                     <label id="email-label" for="email">Email</label>
+                     <input type="email" name="email" id="email" class="form-control" placeholder="Enter You Email Here" required>
+                 </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age <span class="clue">(Optional)</span></label>
+                    <input type="number" name="Age" id="number" min="10" max="50" class="form-control" placeholder="Enter You Age Here" required>
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" required>
+                      <option disabled selected value>Pick Your role</option>
+                      <option>A Fan</option>
+                      <option>Parent</option>
+                      <option>Just A Person and Bored</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Do you like Our Gaming Channel and our Website?</p>
+                    <input name="user-recommend" value="Dang! For Sure Bro!" type="radio" class="input-radio" checked="">Dang! For Sure Bro!</input>
+                    <input name="user-recommend" value="Maybe" type="radio" class="input-radio">Maybe</input>
+                    <input name="user-recommend" value="Dunno Know" type="radio" class="input-radio">Dunno Know</input>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio">Definitely</input>
+                    <input name="user-recommend" value="Dunnow" type="radio" class="input-radio">Dunnow</input>
+                </div>
+                <div class="form-group">
+                    <p>Who do you like the most in our sqaud</p>
+                    <label>
+                        <input name="prefer" value="All" type="checkbox" class="input-checkbox" checked>
+                        All
+                    </label>
+                    <label>
+                        <input name="prefer" value="Gan" type="checkbox" class="input-checkbox">
+                        Gan
+                    </label>
+                    <label>
+                        <input name="prefer" value="RJ" type="checkbox" class="input-checkbox">
+                        RJ
+                    </label>
+                    <label>
+                        <input name="prefer" value="KAKASHI" type="checkbox" class="input-checkbox">
+                        KAKASHI
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">
+                        Submit
+                        </button>
+                </div>
+            </form>
+    </div>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
